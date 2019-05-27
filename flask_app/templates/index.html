@@ -1,0 +1,11 @@
+<html>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<body> 
+<h1>list of containers</h1>
+{% for container_name in list_containers %}
+<h2> {{ container_name }} </h2> <div><form action= /logs/{{ container_name }}><input type="submit" value="Show logs {{ container_name }}" /> </form></div> 
+{% endfor %}
+</body>
+</html>
