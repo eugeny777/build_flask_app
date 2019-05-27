@@ -2,7 +2,7 @@ import sys
 import docker
 from flask import Flask, render_template
 
-client = docker.DockerClient(base_url='193.193.192.25:2376')
+client = docker.DockerClient(base_url='swarm_master:2376')
 
 def show_all_container (): 
     list_of_container = []
